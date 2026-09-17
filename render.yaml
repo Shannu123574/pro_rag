@@ -30,7 +30,10 @@
     plan: starter
     envVars:
       - key: VITE_API_URL
-        sync: false
+        fromService:
+          type: web
+          name: pro-rag-api
+          envVarKey: RENDER_EXTERNAL_URL
       - key: PORT
         value: "5173"
 
@@ -39,3 +42,4 @@ databases:
     databaseName: rag
     user: rag
     plan: starter
+
