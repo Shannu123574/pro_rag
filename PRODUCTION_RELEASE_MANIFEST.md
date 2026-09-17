@@ -1,7 +1,7 @@
 ﻿# PRODUCTION RELEASE MANIFEST
 
 - Application Version: 1.0.0
-- Git SHA: a1ec89a59b86e326bd92d4eb497388881f766192
+- Git SHA: 368a319dd496a8235b1886f98bf7a134eb361b25
 - Branch: main
 - Repository: https://github.com/Shannu123574/pro_rag
 - Backend: FastAPI / Python 3.12
@@ -16,3 +16,4 @@
 - Render configuration: VERIFIED
 - Public deployment: NOT DEPLOYED
 - HTTPS: NOT TESTED
+
