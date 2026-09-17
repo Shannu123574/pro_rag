@@ -23,3 +23,17 @@ To guarantee that LLM output is strictly grounded in retrieved evidence. It math
 ## Known Limitations
 - The local fallback is rigid and may abstain from valid answers if the lexical semantic intent is poorly aligned.
 - Not designed to be exposed directly to the public internet without a reverse proxy.
+
+## Deployment
+- **Local Docker:** docker compose -f docker-compose.prod.yml up
+- **Render:** Use ender.yaml + [RENDER_QUICKSTART.md](RENDER_QUICKSTART.md)
+
+*Public deployment is pending until actually deployed on Render.*
+
+### Documentation
+- [RENDER_QUICKSTART.md](RENDER_QUICKSTART.md)
+- [RENDER_DEPLOYMENT_CHECKLIST.md](RENDER_DEPLOYMENT_CHECKLIST.md)
+- [DEPLOYMENT_GUIDE_RENDER.md](DEPLOYMENT_GUIDE_RENDER.md)
+- [POST_DEPLOY_VERIFICATION.md](POST_DEPLOY_VERIFICATION.md)
+- [PUBLIC_DEMO_SCRIPT.md](PUBLIC_DEMO_SCRIPT.md)
+- [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)
