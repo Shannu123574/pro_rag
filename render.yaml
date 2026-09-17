@@ -4,7 +4,7 @@
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: .
-    plan: starter
+    plan: free
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
@@ -27,7 +27,7 @@
     runtime: docker
     dockerfilePath: ./frontend/Dockerfile
     dockerContext: ./frontend
-    plan: starter
+    plan: free
     envVars:
       - key: VITE_API_URL
         fromService:
@@ -41,5 +41,6 @@ databases:
   - name: pro-rag-db
     databaseName: rag
     user: rag
-    plan: starter
+    plan: free
+
 

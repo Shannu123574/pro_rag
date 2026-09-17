@@ -1,5 +1,18 @@
 ﻿# DEPLOYMENT GUIDE (RENDER)
 
+## Deployment Tier: FREE / DEMO
+- **Web Service:** Free
+- **Postgres:** Free
+
+### Expected Limitations:
+- 15-minute idle spin-down
+- cold startup delay
+- 1 GB Postgres
+- 30-day Postgres expiration
+- no Postgres backups
+
+*This is a Hackathon / prototype deployment, not 24/7 production infrastructure.*
+
 ## Status
 - LOCAL DOCKER = VERIFIED
 - GITHUB = VERIFIED
@@ -24,3 +37,4 @@
 
 ## Rollback
 - Push an older commit to the main branch. Render will auto-deploy the previous image cleanly.
+
