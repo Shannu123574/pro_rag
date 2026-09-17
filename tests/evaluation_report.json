@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-16T17:38:05.221460+00:00",
+  "dataset": {
+    "golden_cases": 12,
+    "abstention_cases": 10,
+    "recall_k": 6
+  },
+  "benchmarks": {
+    "minimum_recall_at_1": 0.8,
+    "minimum_mrr": 0.8,
+    "maximum_warm_latency_seconds": 1.0
+  },
+  "metrics": {
+    "recall_at_1": 1.0,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "citation_correctness": 0.6666666666666666,
+    "answer_grounding": 0.4166666666666667,
+    "abstention_accuracy": 0.7,
+    "warm_latency_ms": 872.1118800007389
+  },
+  "overall_golden_success": 0.4166666666666667
+}
