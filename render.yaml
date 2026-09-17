@@ -1,15 +1,16 @@
 ﻿services:
   - type: web
     name: pro-rag-api
-    env: docker
-    dockerfilePath: backend/Dockerfile
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
     plan: starter
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
         fromDatabase:
           name: pro-rag-db
-          property: internalConnectionString
+          property: connectionString
       - key: OPENAI_API_KEY
         sync: false
       - key: LLM_PROVIDER
@@ -19,16 +20,19 @@
       - key: EMBEDDING_MODEL
         value: text-embedding-3-small
       - key: MIN_RERANK_SCORE
-        value: 0.15
+        value: "0.15"
 
   - type: web
     name: pro-rag-frontend
-    env: docker
-    dockerfilePath: frontend/Dockerfile
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
     plan: starter
     envVars:
       - key: VITE_API_URL
-        value: https://pro-rag-api.onrender.com
+        sync: false
+      - key: PORT
+        value: "5173"
 
 databases:
   - name: pro-rag-db
