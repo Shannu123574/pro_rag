@@ -1,0 +1,74 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Local/debug artifacts
+scratch.py
+script.py
+fix.py
+patch*.py
+patch*.ps1
+validation*.py
+validate_api.py
+ingest_900.py
+test_debug*.py
+test_local.py
+test_one.py
+test_gen.py
+test_flan.py
+test_packer.py
+test_quarantine*.py
+test_regex.py
+test_requests.py
+test_budgets.py
+test_conflict.py
+
+# Generated benchmark/debug output
+*_raw.json
+*_results*.txt
+failure_trace.txt
+pytest_failures.txt
+pytest_out.txt
+build.log
+hardening_report.md
+
+# Local database / model caches
+*.db
+*.sqlite
+*.sqlite3
+.huggingface/
+huggingface/
+models/
+hf_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
